@@ -147,3 +147,24 @@ nav {
 	margin-bottom: 5px;
 	transition: all 0.5s;
 }
+
+@media screen and (max-width: 900px) {
+	.navtop {
+		width: 100%;
+	}
+
+	.ittaboo-logo {
+		margin-left: 10px;
+		margin-right: 10px;
+		height: 80%;
+	}
+
+	.name {
+		font-size: 20px;
+	}
+
+	.p-name {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}

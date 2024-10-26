@@ -97,6 +97,8 @@ h1 {
 	background: linear-gradient(90deg, #ff0055, #ff7b00);
 	width: fit-content;
 	margin-top: 100px;
+	background-size: 200%;
+	animation: gradshift 5s linear infinite;
 }
 
 .welcome-sub-text {
@@ -464,17 +466,21 @@ h1 {
 	background-image: url('./paper-bg.webp');
 	z-index: 3;
 	overflow: hidden;
+	position: relative;
 }
 
 .stats::before {
+	content: '';
 	position: absolute;
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	height: 100%;
 	background-image: url('./paper-bg.webp');
 	filter: blur(5px) brightness(90%);
-	z-index: 2;
+	z-index: 7;
+}
+
+.stats h1 {
+	z-index: 10;
 }
 
 .stat-list {
@@ -483,6 +489,7 @@ h1 {
 	flex-direction: column;
 	position: relative;
 	margin-top: 50px;
+	z-index: 9;
 }
 
 .stat-line {
@@ -512,7 +519,6 @@ h1 {
 	width: 120px;
 	height: 120px;
 	font-size: 80px;
-	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -881,7 +887,7 @@ h1 {
 
 .socials {
 	width: 100%;
-	height: 500px;
+	height: 560px;
 	display: flex;
 	justify-content: center;
 	padding-top: 50px;
@@ -909,6 +915,7 @@ h1 {
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	text-decoration: underline;
+	margin-right: 10px;
 }
 
 .soc > .fas {
@@ -916,6 +923,8 @@ h1 {
 	border-radius: 0px;
 	margin-top: 0;
 	margin-left: 15px;
+	background-size: 200%;
+	animation: gradshift 5s linear infinite;
 }
 
 .social-links {
@@ -930,6 +939,8 @@ h1 {
 	width: 500px;
 	height: 470px;
 	background: linear-gradient(90deg, #ff7b00, #ff0055);
+	background-size: 200%;
+	animation: gradshift 5s linear infinite;
 }
 
 .donation-link > h1 {
@@ -1102,5 +1113,115 @@ footer {
 		transform: rotate(-10deg);
 		top: 900px;
 		right: -400px;
+	}
+
+	.serverpart {
+		height: 2000px;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.serverdiv {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 1000px;
+		top: 0px;
+		align-items: center;
+	}
+
+	.shelters {
+		width: 100%;
+	}
+
+	.shelter-title {
+		line-height: 0.7;
+		font-size: 40px;
+	}
+
+	.lost-animals {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.lostxx {
+		width: 70%;
+		margin-bottom: 20px;
+	}
+
+	.post-redirect {
+		text-align: center;
+		line-height: 0.8;
+		font-size: 25px;
+	}
+
+	.shelter-title2 {
+		line-height: 0.8;
+	}
+
+	.shellist {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.shelter {
+		margin-bottom: 20px;
+	}
+
+	.shelters-available {
+		height: fit-content;
+	}
+
+	.agitation {
+		height: 400px;
+		margin-top: 380px;
+		width: 100%;
+	}
+
+	.agitation-title {
+		margin-bottom: 20px;
+	}
+
+	.agitation-subtitle {
+		font-size: 30px;
+	}
+
+	.agitation-text {
+		font-size: 20px;
+	}
+
+	.overflowing-text {
+		background: white;
+		height: 100%;
+	}
+
+	.socials {
+		height: 900px;
+		padding-top: 0px;
+	}
+
+	.socdiv {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.social-links {
+		transform: scale(70%);
+	}
+
+	.soc {
+		margin-bottom: 20px;
+	}
+
+	.donation-link {
+		transform: scale(70%);
+	}
+
+	.logo2 {
+		transform: scale(70%);
 	}
 }

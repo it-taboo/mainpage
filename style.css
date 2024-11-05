@@ -237,6 +237,64 @@ h1 {
 	}
 }
 
+.achievements {
+	width: 100%;
+	height: 870px;
+	background-image: url('./images/paper-bg.webp');
+	background: linear-gradient(90deg, #ff7b00, #ff0055);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.running-bg-ph0 {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	z-index: -2;
+}
+
+.running-bg-ph0 .running-bg {
+	background: white;
+}
+
+.running-bg-ph0 .running-bg .stat-line-bg .ittaboo-logo2 {
+	margin: 10px;
+	font-family: AdventPro;
+	font-size: 50px;
+	font-weight: 700;
+	font-stretch: expanded;
+	color: transparent;
+	background-image: linear-gradient(90deg, #ff7b00, #ff0055);
+	background-size: 350px;
+	display: inline-flex;
+	padding: 10px;
+	border-radius: 5px;
+	height: fit-content;
+	width: 350px;
+	transition: 0.5s;
+
+	-webkit-mask-image: url('./logo.png');
+	-webkit-mask-size: 100%;
+	-webkit-mask-repeat: no-repeat;
+}
+
+.our-achi {
+	width: 1400px;
+	background: white;
+}
+
+.achi-title {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	background: white;
+	height: 90px;
+	display: flex;
+	width: 800px;
+	justify-content: center;
+	align-items: center;
+}
+
 .whyus {
 	background: linear-gradient(90deg, #ff7b00, #ff0055);
 	width: 100%;
@@ -1008,6 +1066,18 @@ footer {
 
 	.content {
 		width: 700px;
+	}
+
+	.achi-title {
+		height: 60px;
+	}
+
+	.achi-title>h1 {
+		font-size: 40px;
+	}
+
+	.our-achi {
+		width: 370px;
 	}
 
 	.whyus-content {
